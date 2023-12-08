@@ -8,15 +8,25 @@ trait View
      * Método responsável por retornar o conteúdo renderizado de uma view
      *
      * @param string $view - Nome da view que terá o conteúdo impresso
+     * @param array $vars - Variáveis que serão passadas para a view
      * @return string
      */
-    public static function render(string $view)
+    public static function render(string $view, array $vars = [])
     {
+        $view = str_replace(".","/", $view);
+        
         # Pegando o conteúdo da view com o método privado
         $contentView = self::getContentView($view);
 
-        # Retornando o conteúdo da view já renderizado
-        return $contentView;
+        # Descobrir o nome das variáveis (chaves do array de vars)
+        $keys = array_keys($vars);
+        # Aplicar padrão de variáveis da view (todas estão em volta de duas chaves espaçadas)
+        $keys = array_map(function ($item) {
+            return "{{ $item }}";
+        }, $keys);
+
+        # Retornando o conteúdo da view já renderizado com as possíveis variáveis que foram passadas para a view
+        return str_replace($keys, array_values($vars), $contentView);
     }
 
 
