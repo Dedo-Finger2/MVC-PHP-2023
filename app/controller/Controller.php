@@ -2,6 +2,8 @@
 
 namespace App\controller;
 
+use Exception;
+use App\utils\Log;
 use App\utils\View;
 
 class Controller
@@ -18,12 +20,17 @@ class Controller
      */
     public static function view(array $data)
     {
-        # Retornando o layout com as variáveis padrão
-        return self::render("layouts.layout", [
-            "title" => $data['title'] ?? '',
-            "content" => $data['content'] ?? '',
-            "header" => self::renderComponent("header") ?? '',
-            "footer" => self::renderComponent("footer") ?? '',
-        ]);
+        try {
+            # Retornando o layout com as variáveis padrão
+            return self::render("layouts.layout", [
+                "title" => $data['title'] ?? '',
+                "content" => $data['content'] ?? '',
+                "header" => self::renderComponent("header") ?? '',
+                "footer" => self::renderComponent("footer") ?? '',
+            ]);
+        } catch (Exception $e) {
+            Log::log($e->getMessage(), $e->getFile(), $e->getLine(), $e->getCode());
+            die();
+        }
     }
 }

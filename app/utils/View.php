@@ -61,11 +61,9 @@ trait View
      */
     private static function renderComponent(string $name)
     {
-        try {
-            return self::render("components.$name");
-        } catch (Exception $e) {
-            echo $e->getMessage();
-            return "";
-        }
+        # Encontra o arquivo do componente no caminho padrão das views do projeto
+        $file = __DIR__ . "/../../resources/views/components/" . $name . ".html";
+
+        return file_exists($file) ? self::render("components.$name") : throw new Exception("Component $file not found.");
     }
 }
