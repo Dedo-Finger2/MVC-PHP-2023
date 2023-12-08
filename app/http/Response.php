@@ -1,6 +1,8 @@
 <?php
 
 namespace App\http;
+use Exception;
+use App\utils\Log;
 
 class Response
 {
@@ -59,6 +61,7 @@ class Response
     {
         # Enviar os headers previamente
         $this->sendHeaders();
+
         # Imprimir o conteúdo da response
         switch ($this->contentType) {
             case 'text/html':
@@ -75,8 +78,13 @@ class Response
      */
     private function sendHeaders(): void
     {
-        # Enviar o código de status para o navegador
-        http_response_code($this->httpCode);
+        try {
+            # Enviar o código de status para o navegador
+            http_response_code($this->httpCode);
+        } catch (Exception $e) {
+            Log::log($e->getMessage(), $e->getFile(), $e->getLine(), $e->getCode());
+            die();
+        }
 
         # Enviar todos os headers
         foreach ($this->headers as $key => $value) {
