@@ -294,3 +294,67 @@ Line: 64
 Code: 500
 
 ---------------------------------------------------------------
+[An error was caught 2023-12-08 11:34:33]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/comments.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 500
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:43:17]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:44:17]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:44:19]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:44:21]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:44:27]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:45:01]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:45:12]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 127
+Code: 405
+
+---------------------------------------------------------------

@@ -13,7 +13,7 @@ class Log extends View
         $currentDate = date("Y-m-d");
         $currentDateTime = date("Y-m-d H:i:s");
 
-        $logFile = fopen(__DIR__."/../log/$currentDate.txt","a+");
+        $logFile = fopen("log/$currentDate.txt","a+");
         fwrite($logFile, "[An error was caught $currentDateTime]\n\nMesage: $message\nFile: $file\nLine: $line\nCode: $code\n\n");
         fwrite($logFile,"---------------------------------------------------------------\n");
         fclose($logFile);
