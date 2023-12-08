@@ -2,6 +2,7 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
+use App\http\Request;
 use App\utils\Log;
 use App\controller\HomeController;
 
