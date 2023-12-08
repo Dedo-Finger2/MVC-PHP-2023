@@ -6,9 +6,9 @@ use Exception;
 use App\utils\Log;
 use App\utils\View;
 
-class Controller
+class Controller extends View
 {
-    use View;
+    // use View;
 
 
     /**

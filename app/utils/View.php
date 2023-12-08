@@ -5,8 +5,16 @@ namespace App\utils;
 use Exception;
 use App\utils\Log;
 
-trait View
+class View
 {
+    private static array $vars = [];
+
+    public static function init(array $vars = [])
+    {
+        self::$vars = $vars;
+    }
+
+
     /**
      * Método responsável por retornar o conteúdo renderizado de uma view
      *
@@ -17,6 +25,9 @@ trait View
     public static function render(string $view, array $vars = [])
     {
         $view = str_replace(".", "/", $view);
+
+        # Mergir as variáveis da view
+        $vars = array_merge(self::$vars, $vars);
 
         # Pegando o conteúdo da view com o método privado
         try {
@@ -59,7 +70,7 @@ trait View
      *
      * @return string - Conteúdo do arquivo renderizado
      */
-    private static function renderComponent(string $name)
+    public static function renderComponent(string $name)
     {
         # Encontra o arquivo do componente no caminho padrão das views do projeto
         $file = __DIR__ . "/../../resources/views/components/" . $name . ".html";

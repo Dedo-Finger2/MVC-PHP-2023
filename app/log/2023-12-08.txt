@@ -78,3 +78,19 @@ Line: 111
 Code: 404
 
 ---------------------------------------------------------------
+[An error was caught 2023-12-08 06:11:47]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 06:14:25]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------

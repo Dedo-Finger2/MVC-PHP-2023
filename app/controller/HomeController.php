@@ -6,7 +6,7 @@ use App\utils\View;
 
 class HomeController extends Controller
 {
-    use View;
+    // use View;
 
     /**
      * Método responsável por retornar a view home que será impresso na tela
