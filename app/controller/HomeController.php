@@ -18,7 +18,7 @@ class HomeController extends Controller
         $name = "Greg Almeida";
 
         # Guarda o conteúdo renderizado da view numa variável (home)
-        $viewContent =  self::render("home", [
+        $viewContent = self::render("home", [
             "name" => $name,
             "description" => "Teste MVC com PHP puro",
         ]);
@@ -26,6 +26,22 @@ class HomeController extends Controller
         # Retorna a view com o layout aplicado (layouts.layout)
         return self::view([
             'title' => 'Titulo legal',
+            'content' => $viewContent,
+        ]);
+    }
+
+
+    public static function about()
+    {
+        # Guarda o conteúdo renderizado da view numa variável (home)
+        $viewContent = self::render("about", [
+            "name" => "Greg Almeida",
+            "description" => "Teste MVC com PHP puro - Página de sobre",
+        ]);
+
+        # Retorna a view com o layout aplicado (layouts.layout)
+        return self::view([
+            'title' => 'About',
             'content' => $viewContent,
         ]);
     }
