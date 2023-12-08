@@ -1,5 +1,6 @@
 <?php 
 
+use App\controller\ProductController;
 use App\http\Response;
 use App\controller\HomeController;
 
@@ -13,5 +14,5 @@ $router->get('/about', [function(){
 }]);
 
 $router->get('/product/{id}', [function(int $id){
-    return new Response(200, "Product mº $id");
+    return new Response(200, ProductController::products($id));
 }]);

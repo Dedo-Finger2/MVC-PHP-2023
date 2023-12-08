@@ -61,7 +61,7 @@ class View
         $file = __DIR__ . "/../../resources/views/" . $view . ".html";
 
         # Retorna, se o arquivo existir, o conteúdo dele, senão, retorna uma string vazia
-        return file_exists($file) ? file_get_contents($file) : throw new Exception("File $file not found.");
+        return file_exists($file) ? file_get_contents($file) : throw new Exception("File $file not found.", 500);
     }
 
 

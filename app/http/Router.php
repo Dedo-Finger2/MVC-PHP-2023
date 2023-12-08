@@ -132,7 +132,7 @@ class Router
     }
 
 
-    public function run(): Response
+    public function run()
     {
         try {
             # Obter a rota atual
@@ -146,6 +146,7 @@ class Router
 
             # Reflection
             $reflection = new ReflectionFunction($route['controller']);
+            # Organizar a ordem das variávies que vinheram de fora com os parâmetros do método sendo executado
             foreach ($reflection->getParameters() as $parameter) {
                 $name = $parameter->getName();
                 $args[$name] = $route['variables'][$name] ?? '';
@@ -156,7 +157,7 @@ class Router
 
         } catch (Exception $e) {
             Log::log($e->getMessage(), $e->getFile(), $e->getLine(), $e->getcode());
-            return new Response($e->getCode(), $e->getMessage());
+            // return new Response($e->getCode(), $e->getMessage());
         }
     }
 

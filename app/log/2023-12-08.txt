@@ -222,3 +222,75 @@ Line: 121
 Code: 404
 
 ---------------------------------------------------------------
+[An error was caught 2023-12-08 11:05:22]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 131
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:05:33]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:18]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:18]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:19]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:19]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:19]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:20]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 0
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 11:06:21]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/product.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 64
+Code: 500
+
+---------------------------------------------------------------
