@@ -14,18 +14,16 @@ class Controller
      *
      * @param string $title - Título dinâmico da página
      * @param string $content - Conteúdo dinâmico da página
-     * @return string
+     * @return string|null - Layout com o conteúdo da página que vai usar o layout
      */
     public static function view(array $data)
     {
+        # Retornando o layout com as variáveis padrão
         return self::render("layouts.layout", [
-            "title" => $data['title'] ? $data['title'] : '',
-            "content" => $data['content'] ? $data['content'] : '',
-            "header" => self::renderComponent("header"),
-            "footer" => self::renderComponent("footer"),
+            "title" => $data['title'] ?? '',
+            "content" => $data['content'] ?? '',
+            "header" => self::renderComponent("header") ?? '',
+            "footer" => self::renderComponent("footer") ?? '',
         ]);
     }
-
-
-
 }

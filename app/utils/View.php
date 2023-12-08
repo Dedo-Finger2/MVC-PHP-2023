@@ -3,6 +3,7 @@
 namespace App\utils;
 
 use Exception;
+use App\utils\Log;
 
 trait View
 {
@@ -18,7 +19,12 @@ trait View
         $view = str_replace(".", "/", $view);
 
         # Pegando o conteúdo da view com o método privado
-        $contentView = self::getContentView($view);
+        try {
+            $contentView = self::getContentView($view);
+        } catch (Exception $e) {
+            Log::log($e->getMessage(), $e->getFile(), $e->getLine(), $e->getCode());
+            die();
+        }
 
         # Descobrir o nome das variáveis (chaves do array de vars)
         $keys = array_keys($vars);
@@ -44,7 +50,7 @@ trait View
         $file = __DIR__ . "/../../resources/views/" . $view . ".html";
 
         # Retorna, se o arquivo existir, o conteúdo dele, senão, retorna uma string vazia
-        return file_exists($file) ? file_get_contents($file) : "";
+        return file_exists($file) ? file_get_contents($file) : throw new Exception("File $file not found.");
     }
 
 

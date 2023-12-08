@@ -1,0 +1,8 @@
+[An error was caught 2023-12-08 03:41:40]
+
+Mesage: File /home/dedo/PHPProjects/MVC-PHP/app/utils/../../resources/views/homee.html not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/utils/View.php
+Line: 53
+Code: 0
+
+---------------------------------------------------------------
