@@ -2,6 +2,8 @@
 
 namespace App\utils;
 
+use Exception;
+
 trait View
 {
     /**
@@ -13,8 +15,8 @@ trait View
      */
     public static function render(string $view, array $vars = [])
     {
-        $view = str_replace(".","/", $view);
-        
+        $view = str_replace(".", "/", $view);
+
         # Pegando o conteúdo da view com o método privado
         $contentView = self::getContentView($view);
 
@@ -43,5 +45,21 @@ trait View
 
         # Retorna, se o arquivo existir, o conteúdo dele, senão, retorna uma string vazia
         return file_exists($file) ? file_get_contents($file) : "";
+    }
+
+
+    /**
+     * Método responsável por renderizar o header da view
+     *
+     * @return string - Conteúdo do arquivo renderizado
+     */
+    private static function renderComponent(string $name)
+    {
+        try {
+            return self::render("components.$name");
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            return "";
+        }
     }
 }

@@ -21,8 +21,11 @@ class Controller
         return self::render("layouts.layout", [
             "title" => $data['title'] ? $data['title'] : '',
             "content" => $data['content'] ? $data['content'] : '',
-            "navbar" => $data["navbar"] ? $data["navbar"] : "",
-            "footer" => $data["footer"] ? $data["footer"] : "",
+            "header" => self::renderComponent("header"),
+            "footer" => self::renderComponent("footer"),
         ]);
     }
+
+
+
 }
