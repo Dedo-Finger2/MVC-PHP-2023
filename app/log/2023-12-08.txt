@@ -6,3 +6,75 @@ Line: 53
 Code: 0
 
 ---------------------------------------------------------------
+[An error was caught 2023-12-08 05:49:30]
+
+Mesage: URL not found.
+File: URL not found.
+Line: 93
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:49:50]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 93
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:51:08]
+
+Mesage: Method not allowed.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 107
+Code: 405
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:54:02]
+
+Mesage: URL could not be processed. Controller not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 122
+Code: 500
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:56:25]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:57:04]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:57:35]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 05:57:59]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------
+[An error was caught 2023-12-08 06:00:16]
+
+Mesage: URL not found.
+File: /home/dedo/PHPProjects/MVC-PHP/app/http/Router.php
+Line: 111
+Code: 404
+
+---------------------------------------------------------------
