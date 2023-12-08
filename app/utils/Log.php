@@ -4,9 +4,9 @@ namespace App\utils;
 
 use App\utils\View;
 
-class Log
+class Log extends View
 {
-    use View;
+    // use View;
     
     public static function log(string $message, string $file, int $line, int|string $code)
     {

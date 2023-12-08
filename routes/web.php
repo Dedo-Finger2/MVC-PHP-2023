@@ -11,3 +11,7 @@ $router->get('/', [function(){
 $router->get('/about', [function(){
     return new Response(200, HomeController::about());
 }]);
+
+$router->get('/product/{id}', [function(int $id){
+    return new Response(200, "Product mº $id");
+}]);
